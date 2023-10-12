@@ -32,3 +32,75 @@ footer p{
         text-align: center;
     }
 }
+
+@media all and (max-width:800px){
+    .Container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contacto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width:600px){
+    .Container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contacto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.contacto{
+    display: flex;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 60px;
+   }
+    
+   label {
+    display: block;
+
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+   }
+    
+   input[type="text"],
+   input[type="email"],
+   textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid indigo;
+    border-radius: 3px;
+   }
+    
+   textarea {
+    height: 120px;
+   }
+    
+   input[type="submit"] {
+    background-color: indigo;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+   }
+    
+   input[type="submit"]:hover {
+    background-color: rgb(123, 38, 183);
+   }
+
+   .foter{
+    background-color: rgb(135, 8, 225);
+    color: white;
+    
+   }
